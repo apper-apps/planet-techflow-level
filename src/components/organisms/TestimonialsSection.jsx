@@ -40,7 +40,7 @@ const TestimonialsSection = () => {
   }
 
   const prevTestimonial = () => {
-    setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
+setCurrentIndex((prev) => (prev - 1 + testimonials.length) % testimonials.length)
   }
 
   if (loading) {
@@ -48,28 +48,48 @@ const TestimonialsSection = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="h-8 bg-gray-200 rounded w-64 mx-auto mb-4 animate-shimmer"></div>
-            <div className="h-4 bg-gray-200 rounded w-96 mx-auto animate-shimmer"></div>
+            <div className="h-10 bg-gray-200 rounded w-80 mx-auto mb-4 animate-shimmer"></div>
+            <div className="space-y-2 max-w-3xl mx-auto">
+              <div className="h-6 bg-gray-200 rounded animate-shimmer"></div>
+              <div className="h-6 bg-gray-200 rounded w-3/4 mx-auto animate-shimmer"></div>
+            </div>
           </div>
-          <div className="max-w-4xl mx-auto">
-            <div className="bg-white rounded-xl p-8 shadow-lg">
-              <div className="flex items-center mb-4 space-x-1">
+          
+          <div className="max-w-4xl mx-auto relative">
+            <div className="bg-white rounded-xl p-8 shadow-lg border border-gray-100">
+              <div className="flex items-center mb-6 space-x-1">
                 {[1, 2, 3, 4, 5].map((i) => (
-                  <div key={i} className="w-4 h-4 bg-gray-200 rounded animate-shimmer"></div>
+                  <div key={i} className="w-5 h-5 bg-yellow-200 rounded animate-shimmer"></div>
                 ))}
               </div>
-              <div className="space-y-3 mb-6">
-                <div className="h-4 bg-gray-200 rounded animate-shimmer"></div>
-                <div className="h-4 bg-gray-200 rounded w-3/4 animate-shimmer"></div>
+              <div className="space-y-3 mb-8">
+                <div className="h-5 bg-gray-200 rounded animate-shimmer"></div>
+                <div className="h-5 bg-gray-200 rounded animate-shimmer"></div>
+                <div className="h-5 bg-gray-200 rounded w-3/4 animate-shimmer"></div>
               </div>
               <div className="flex items-center">
-                <div className="w-12 h-12 bg-gray-200 rounded-full mr-4 animate-shimmer"></div>
+                <div className="w-16 h-16 bg-gray-200 rounded-full mr-4 animate-shimmer"></div>
                 <div className="space-y-2">
+                  <div className="h-5 bg-gray-200 rounded w-40 animate-shimmer"></div>
                   <div className="h-4 bg-gray-200 rounded w-32 animate-shimmer"></div>
-                  <div className="h-3 bg-gray-200 rounded w-24 animate-shimmer"></div>
                 </div>
               </div>
             </div>
+
+            {/* Navigation Skeleton */}
+            <div className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 w-12 h-12 bg-gray-200 rounded-full animate-shimmer"></div>
+            <div className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 w-12 h-12 bg-gray-200 rounded-full animate-shimmer"></div>
+
+            {/* Dots Skeleton */}
+            <div className="flex justify-center mt-8 space-x-2">
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="w-3 h-3 bg-gray-200 rounded-full animate-shimmer"></div>
+              ))}
+            </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <div className="h-12 bg-gray-200 rounded-lg w-64 mx-auto animate-shimmer"></div>
           </div>
         </div>
       </section>

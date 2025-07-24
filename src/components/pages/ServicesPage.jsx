@@ -1,11 +1,11 @@
-import { useState, useEffect } from "react"
-import { motion } from "framer-motion"
-import { toast } from "react-toastify"
-import ApperIcon from "@/components/ApperIcon"
-import ServiceCard from "@/components/molecules/ServiceCard"
-import servicesService from "@/services/api/servicesService"
-import Loading from "@/components/ui/Loading"
-import Error from "@/components/ui/Error"
+import React, { useEffect, useState } from "react";
+import { motion } from "framer-motion";
+import { toast } from "react-toastify";
+import servicesService from "@/services/api/servicesService";
+import ApperIcon from "@/components/ApperIcon";
+import ServiceCard from "@/components/molecules/ServiceCard";
+import Error from "@/components/ui/Error";
+import Loading from "@/components/ui/Loading";
 
 const ServicesPage = () => {
   const [services, setServices] = useState([])
@@ -52,22 +52,139 @@ const ServicesPage = () => {
       title: "Scalable Solutions",
       description: "Solutions that grow with your business needs and adapt to market changes"
     },
-    {
+{
       icon: "Users",
       title: "Expert Team",
       description: "Certified professionals with extensive experience in enterprise technology"
     }
   ]
 
-  if (loading) return <Loading />
+  if (loading) {
+    return (
+      <div className="py-12">
+        {/* Hero Section Skeleton */}
+        <section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white py-20">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center">
+              <div className="h-14 bg-white/20 rounded w-96 mx-auto mb-6 animate-shimmer"></div>
+              <div className="space-y-3 max-w-3xl mx-auto">
+                <div className="h-6 bg-white/20 rounded animate-shimmer"></div>
+                <div className="h-6 bg-white/20 rounded w-3/4 mx-auto animate-shimmer"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Grid Skeleton */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="h-10 bg-gray-200 rounded w-80 mx-auto mb-4 animate-shimmer"></div>
+              <div className="space-y-2 max-w-3xl mx-auto">
+                <div className="h-6 bg-gray-200 rounded animate-shimmer"></div>
+                <div className="h-6 bg-gray-200 rounded w-2/3 mx-auto animate-shimmer"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {[1, 2, 3, 4, 5, 6].map((i) => (
+                <div key={i} className="bg-white rounded-xl p-8 shadow-lg">
+                  <div className="w-16 h-16 bg-gray-200 rounded-xl mb-6 animate-shimmer"></div>
+                  <div className="h-7 bg-gray-200 rounded mb-4 animate-shimmer"></div>
+                  <div className="space-y-2 mb-6">
+                    <div className="h-4 bg-gray-200 rounded animate-shimmer"></div>
+                    <div className="h-4 bg-gray-200 rounded animate-shimmer"></div>
+                    <div className="h-4 bg-gray-200 rounded w-3/4 animate-shimmer"></div>
+                  </div>
+                  <div className="space-y-2 mb-6">
+                    <div className="h-4 bg-gray-200 rounded w-20 animate-shimmer"></div>
+                    <div className="space-y-1">
+                      <div className="h-3 bg-gray-200 rounded animate-shimmer"></div>
+                      <div className="h-3 bg-gray-200 rounded w-4/5 animate-shimmer"></div>
+                    </div>
+                  </div>
+                  <div className="h-12 bg-gray-200 rounded-lg animate-shimmer"></div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Benefits Section Skeleton */}
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="h-10 bg-gray-200 rounded w-72 mx-auto mb-4 animate-shimmer"></div>
+              <div className="space-y-2 max-w-3xl mx-auto">
+                <div className="h-6 bg-gray-200 rounded animate-shimmer"></div>
+                <div className="h-6 bg-gray-200 rounded w-3/4 mx-auto animate-shimmer"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="text-center">
+                  <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-6 animate-shimmer"></div>
+                  <div className="h-7 bg-gray-200 rounded w-32 mx-auto mb-4 animate-shimmer"></div>
+                  <div className="space-y-2">
+                    <div className="h-4 bg-gray-200 rounded animate-shimmer"></div>
+                    <div className="h-4 bg-gray-200 rounded w-4/5 mx-auto animate-shimmer"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* Process Section Skeleton */}
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-16">
+              <div className="h-10 bg-gray-200 rounded w-60 mx-auto mb-4 animate-shimmer"></div>
+              <div className="space-y-2 max-w-3xl mx-auto">
+                <div className="h-6 bg-gray-200 rounded animate-shimmer"></div>
+                <div className="h-6 bg-gray-200 rounded w-2/3 mx-auto animate-shimmer"></div>
+              </div>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+              {[1, 2, 3, 4].map((i) => (
+                <div key={i} className="text-center">
+                  <div className="w-16 h-16 bg-gray-200 rounded-full mx-auto mb-6 animate-shimmer"></div>
+                  <div className="h-7 bg-gray-200 rounded w-28 mx-auto mb-4 animate-shimmer"></div>
+                  <div className="space-y-2">
+                    <div className="h-4 bg-gray-200 rounded animate-shimmer"></div>
+                    <div className="h-4 bg-gray-200 rounded w-3/4 mx-auto animate-shimmer"></div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+
+        {/* CTA Section Skeleton */}
+        <section className="py-20 bg-gradient-to-r from-primary-600 to-primary-700 text-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div className="h-10 bg-white/20 rounded w-96 mx-auto mb-4 animate-shimmer"></div>
+            <div className="space-y-2 max-w-2xl mx-auto mb-8">
+              <div className="h-6 bg-white/20 rounded animate-shimmer"></div>
+              <div className="h-6 bg-white/20 rounded w-4/5 mx-auto animate-shimmer"></div>
+            </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <div className="h-14 bg-white/20 rounded-lg w-64 animate-shimmer"></div>
+              <div className="h-14 bg-white/20 rounded-lg w-48 animate-shimmer"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    )
+  }
+
   if (error) return <Error message={error} onRetry={loadServices} />
 
   return (
     <div className="py-12">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white py-20">
+<section className="bg-gradient-to-br from-primary-900 via-primary-800 to-primary-700 text-white py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div 
+          <motion.div
             className="text-center"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}

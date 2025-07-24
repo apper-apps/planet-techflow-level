@@ -46,10 +46,71 @@ const ClientPortalDashboard = ({ onCreateTicket, onViewTicket }) => {
       "in-progress": tickets.filter(t => t.status.toLowerCase() === "in-progress").length,
       closed: tickets.filter(t => t.status.toLowerCase() === "closed").length,
       pending: tickets.filter(t => t.status.toLowerCase() === "pending").length
-    }
+}
   }
 
-  if (loading) return <Loading />
+  if (loading) {
+    return (
+      <div className="space-y-8">
+        {/* Header Skeleton */}
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-4">
+          <div>
+            <div className="h-9 bg-gray-200 rounded w-64 mb-2 animate-shimmer"></div>
+            <div className="h-5 bg-gray-200 rounded w-80 animate-shimmer"></div>
+          </div>
+          <div className="h-12 bg-gray-200 rounded-lg w-48 animate-shimmer"></div>
+        </div>
+
+        {/* Stats Cards Skeleton */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+          {[1, 2, 3, 4, 5].map((i) => (
+            <div key={i} className="p-6 rounded-xl border-2 border-gray-200 bg-white">
+              <div className="text-center">
+                <div className="h-9 bg-gray-200 rounded w-16 mx-auto mb-2 animate-shimmer"></div>
+                <div className="h-6 bg-gray-200 rounded w-20 mx-auto animate-shimmer"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        {/* Filters Skeleton */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+          <div className="flex items-center space-x-4">
+            <div className="h-5 bg-gray-200 rounded w-32 animate-shimmer"></div>
+            <div className="h-10 bg-gray-200 rounded w-48 animate-shimmer"></div>
+          </div>
+          <div className="h-4 bg-gray-200 rounded w-40 animate-shimmer"></div>
+        </div>
+
+        {/* Tickets Grid Skeleton */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+          {[1, 2, 3, 4].map((i) => (
+            <div key={i} className="bg-white rounded-xl p-6 shadow-lg border border-gray-200">
+              <div className="flex justify-between items-start mb-4">
+                <div className="space-y-2 flex-1">
+                  <div className="h-6 bg-gray-200 rounded w-3/4 animate-shimmer"></div>
+                  <div className="h-4 bg-gray-200 rounded w-20 animate-shimmer"></div>
+                </div>
+                <div className="h-6 bg-gray-200 rounded w-20 animate-shimmer"></div>
+              </div>
+              <div className="space-y-2 mb-4">
+                <div className="h-4 bg-gray-200 rounded animate-shimmer"></div>
+                <div className="h-4 bg-gray-200 rounded w-2/3 animate-shimmer"></div>
+              </div>
+              <div className="flex justify-between items-center pt-4 border-t border-gray-100">
+                <div className="space-y-1">
+                  <div className="h-3 bg-gray-200 rounded w-16 animate-shimmer"></div>
+                  <div className="h-4 bg-gray-200 rounded w-24 animate-shimmer"></div>
+                </div>
+                <div className="h-9 bg-gray-200 rounded w-16 animate-shimmer"></div>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    )
+  }
+  
   if (error) return <Error message={error} onRetry={loadTickets} />
 
   const statusCounts = getStatusCounts()

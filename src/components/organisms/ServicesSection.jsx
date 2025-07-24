@@ -27,7 +27,7 @@ const ServicesSection = () => {
 
   const handleGetQuote = (service) => {
     // Navigate to contact page with service pre-selected
-    window.location.href = `/contact?service=${encodeURIComponent(service.title)}`
+window.location.href = `/contact?service=${encodeURIComponent(service.title)}`
   }
 
   if (loading) {
@@ -35,21 +35,35 @@ const ServicesSection = () => {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <div className="h-8 bg-gray-200 rounded w-64 mx-auto mb-4 animate-shimmer"></div>
-            <div className="h-4 bg-gray-200 rounded w-96 mx-auto animate-shimmer"></div>
+            <div className="h-10 bg-gray-200 rounded w-80 mx-auto mb-4 animate-shimmer"></div>
+            <div className="space-y-2 max-w-3xl mx-auto">
+              <div className="h-6 bg-gray-200 rounded animate-shimmer"></div>
+              <div className="h-6 bg-gray-200 rounded w-3/4 mx-auto animate-shimmer"></div>
+            </div>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
             {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-white rounded-xl p-8 shadow-lg">
-                <div className="h-16 w-16 bg-gray-200 rounded-xl mb-6 animate-shimmer"></div>
-                <div className="h-6 bg-gray-200 rounded mb-4 animate-shimmer"></div>
+              <div key={i} className="bg-white rounded-xl p-8 shadow-lg hover:shadow-xl transition-shadow duration-300">
+                <div className="w-16 h-16 bg-gray-200 rounded-xl mb-6 animate-shimmer"></div>
+                <div className="h-7 bg-gray-200 rounded mb-4 animate-shimmer"></div>
                 <div className="space-y-2 mb-6">
+                  <div className="h-4 bg-gray-200 rounded animate-shimmer"></div>
                   <div className="h-4 bg-gray-200 rounded animate-shimmer"></div>
                   <div className="h-4 bg-gray-200 rounded w-3/4 animate-shimmer"></div>
                 </div>
-                <div className="h-10 bg-gray-200 rounded animate-shimmer"></div>
+                <div className="space-y-2 mb-6">
+                  <div className="h-4 bg-gray-200 rounded w-20 animate-shimmer"></div>
+                  <div className="space-y-1">
+                    <div className="h-3 bg-gray-200 rounded animate-shimmer"></div>
+                    <div className="h-3 bg-gray-200 rounded w-4/5 animate-shimmer"></div>
+                  </div>
+                </div>
+                <div className="h-12 bg-gray-200 rounded-lg animate-shimmer"></div>
               </div>
             ))}
+          </div>
+          <div className="text-center">
+            <div className="h-12 bg-gray-200 rounded-lg w-52 mx-auto animate-shimmer"></div>
           </div>
         </div>
       </section>
