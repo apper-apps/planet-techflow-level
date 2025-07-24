@@ -1,0 +1,66 @@
+[
+  {
+    "Id": 1,
+    "name": "Michael Chen",
+    "role": "CTO",
+    "company": "TechStart Inc.",
+    "content": "Techlopers transformed our entire IT infrastructure. Their team's expertise in cloud migration and system optimization helped us reduce operational costs by 40% while improving performance significantly.",
+    "rating": 5
+  },
+  {
+    "Id": 2,
+    "name": "Sarah Rodriguez",
+    "role": "Operations Manager",
+    "company": "Global Logistics Corp",
+    "content": "Professional service delivery and proactive support. They understand our business needs and deliver solutions that work. The ERP implementation was seamless and on schedule.",
+    "rating": 5
+  },
+  {
+    "Id": 3,
+    "name": "David Thompson",
+    "role": "IT Director",
+    "company": "Healthcare Plus",
+    "content": "Reliable team with quick turnaround times. Their cybersecurity solutions have given us peace of mind, and their 24/7 support ensures our systems are always running smoothly.",
+    "rating": 5
+  },
+  {
+    "Id": 4,
+    "name": "Lisa Wang",
+    "role": "CEO",
+    "company": "Retail Solutions Ltd",
+    "content": "They manage our entire IT infrastructure with zero hassle. The custom software they developed has streamlined our operations and improved customer satisfaction dramatically.",
+    "rating": 4
+  },
+  {
+    "Id": 5,
+    "name": "James Mitchell",
+    "role": "Founder",
+    "company": "FinTech Innovations",
+    "content": "Outstanding technical expertise and excellent project management. The mobile app they developed exceeded our expectations and has been a game-changer for our business.",
+    "rating": 5
+  },
+  {
+    "Id": 6,
+    "name": "Amanda Foster",
+    "role": "VP Technology",
+    "company": "Manufacturing Systems",
+    "content": "Their consulting services helped us navigate complex technology decisions. The team's deep industry knowledge and strategic thinking have been invaluable for our digital transformation.",
+    "rating": 5
+  },
+  {
+    "Id": 7,
+    "name": "Robert Garcia",
+    "role": "Systems Administrator",
+    "company": "Education Network",
+    "content": "Excellent server management and network optimization services. Our system uptime has improved to 99.9% since partnering with Techlopers. Highly recommend their services.",
+    "rating": 4
+  },
+  {
+    "Id": 8,
+    "name": "Maria Gonzalez",
+    "role": "COO",
+    "company": "Professional Services Group",
+    "content": "The hardware procurement and setup services were exceptional. They helped us upgrade our entire office infrastructure efficiently and within budget. Great attention to detail.",
+    "rating": 5
+  }
+]

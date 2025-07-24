@@ -1,0 +1,121 @@
+[
+  {
+    "Id": 1,
+    "title": "Email Server Not Responding",
+    "category": "Networking & Servers",
+    "status": "open",
+    "priority": "high",
+    "description": "Our email server has been unresponsive since this morning. Employees cannot send or receive emails, which is affecting our daily operations. Please investigate and resolve ASAP.",
+    "attachments": ["server_error_log.txt", "network_diagnostics.pdf"],
+    "comments": [
+      {
+        "id": 1,
+        "content": "We've received your ticket and our team is investigating the issue. Initial diagnostics suggest a configuration problem.",
+        "author": "Support Team",
+        "timestamp": "2024-01-15T10:30:00Z"
+      }
+    ],
+    "createdAt": "2024-01-15T09:15:00Z",
+    "updatedAt": "2024-01-15T10:30:00Z"
+  },
+  {
+    "Id": 2,
+    "title": "Software License Renewal",
+    "category": "Software Development",
+    "status": "in-progress",
+    "priority": "medium",
+    "description": "We need to renew our software licenses for the custom CRM system. Please provide pricing and renewal options for the next fiscal year.",
+    "attachments": [],
+    "comments": [
+      {
+        "id": 1,
+        "content": "Thank you for reaching out. We're preparing a comprehensive renewal proposal with different pricing tiers.",
+        "author": "Account Manager",
+        "timestamp": "2024-01-14T14:20:00Z"
+      },
+      {
+        "id": 2,
+        "content": "We've sent the renewal proposal to your email. Please review and let us know if you have any questions.",
+        "author": "Account Manager",
+        "timestamp": "2024-01-14T16:45:00Z"
+      }
+    ],
+    "createdAt": "2024-01-14T13:00:00Z",
+    "updatedAt": "2024-01-14T16:45:00Z"
+  },
+  {
+    "Id": 3,
+    "title": "Firewall Configuration Update",
+    "category": "Cybersecurity",
+    "status": "closed",
+    "priority": "medium",
+    "description": "Need to update firewall rules to allow access to new cloud service endpoints. Please schedule this during off-peak hours to minimize disruption.",
+    "attachments": ["firewall_rules.xlsx"],
+    "comments": [
+      {
+        "id": 1,
+        "content": "We've scheduled the firewall update for tonight at 2 AM. The maintenance window is expected to be 30 minutes.",
+        "author": "Security Team",
+        "timestamp": "2024-01-13T15:00:00Z"
+      },
+      {
+        "id": 2,
+        "content": "Firewall update completed successfully. All new rules are active and tested. No issues detected.",
+        "author": "Security Team",
+        "timestamp": "2024-01-14T02:30:00Z"
+      }
+    ],
+    "createdAt": "2024-01-13T11:30:00Z",
+    "updatedAt": "2024-01-14T02:30:00Z"
+  },
+  {
+    "Id": 4,
+    "title": "New Employee Workstation Setup",
+    "category": "Hardware Support",
+    "status": "pending",
+    "priority": "low",
+    "description": "We have 3 new employees starting next week. Need to set up their workstations with standard software and security configurations.",
+    "attachments": ["employee_list.pdf", "software_requirements.docx"],
+    "comments": [],
+    "createdAt": "2024-01-12T16:45:00Z",
+    "updatedAt": "2024-01-12T16:45:00Z"
+  },
+  {
+    "Id": 5,
+    "title": "Database Performance Issues",
+    "category": "ERP & IT Consulting",
+    "status": "open",
+    "priority": "high",
+    "description": "Our main database is experiencing slow query performance, especially during peak hours. Reports are taking significantly longer to generate, affecting business operations.",
+    "attachments": ["performance_metrics.xlsx", "slow_queries.log"],
+    "comments": [
+      {
+        "id": 1,
+        "content": "We're analyzing the performance metrics and query logs. Initial assessment shows some indexing optimization opportunities.",
+        "author": "Database Team",
+        "timestamp": "2024-01-16T09:15:00Z"
+      }
+    ],
+    "createdAt": "2024-01-16T08:00:00Z",
+    "updatedAt": "2024-01-16T09:15:00Z"
+  },
+  {
+    "Id": 6,
+    "title": "Mobile App Bug Report",
+    "category": "Software Development",
+    "status": "in-progress",
+    "priority": "medium",
+    "description": "Users are reporting crashes when trying to upload large files through the mobile app. This issue seems to affect both iOS and Android versions.",
+    "attachments": ["crash_logs.zip", "user_reports.pdf"],
+    "comments": [
+      {
+        "id": 1,
+        "content": "We've reproduced the issue and identified the root cause. Working on a fix that will be included in the next app update.",
+        "author": "Mobile Dev Team",
+        "timestamp": "2024-01-15T13:20:00Z"
+      }
+    ],
+    "createdAt": "2024-01-15T11:00:00Z",
+    "updatedAt": "2024-01-15T13:20:00Z"
+  }
+]

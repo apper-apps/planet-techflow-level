@@ -1,0 +1,72 @@
+[
+  {
+    "Id": 1,
+    "title": "Software & App Development",
+    "description": "Custom software solutions and mobile applications designed to meet your specific business requirements. We build scalable, secure, and user-friendly applications using the latest technologies.",
+    "icon": "Code",
+    "features": [
+      "Web application development",
+      "Mobile app development (iOS & Android)",
+      "API development and integration",
+      "Database design and optimization",
+      "Quality assurance and testing",
+      "Deployment and maintenance"
+    ]
+  },
+  {
+    "Id": 2,
+    "title": "ERP & IT Consulting",
+    "description": "Strategic IT consulting services to help you make informed technology decisions. We provide ERP implementation, system integration, and digital transformation guidance.",
+    "icon": "Settings",
+    "features": [
+      "ERP system selection and implementation",
+      "Business process optimization",
+      "System integration and migration",
+      "Digital transformation strategy",
+      "Technology roadmap planning",
+      "Change management support"
+    ]
+  },
+  {
+    "Id": 3,
+    "title": "Networking & Server Management",
+    "description": "Complete network infrastructure setup, server configuration, and ongoing management services. We ensure your IT infrastructure is reliable, secure, and optimized for performance.",
+    "icon": "Server",
+    "features": [
+      "Network design and implementation",
+      "Server setup and configuration",
+      "Remote monitoring and management",
+      "Performance optimization",
+      "Backup and disaster recovery",
+      "24/7 technical support"
+    ]
+  },
+  {
+    "Id": 4,
+    "title": "Cybersecurity Solutions",
+    "description": "Comprehensive cybersecurity services to protect your business from threats. From firewall management to advanced threat detection, we keep your data and systems secure.",
+    "icon": "Shield",
+    "features": [
+      "Firewall configuration and management",
+      "Threat detection and response",
+      "Endpoint security solutions",
+      "Security assessments and audits",
+      "Compliance and regulatory support",
+      "Employee security training"
+    ]
+  },
+  {
+    "Id": 5,
+    "title": "Hardware Procurement & Configuration",
+    "description": "End-to-end hardware solutions including procurement, setup, and configuration. We help you select the right hardware for your needs and ensure everything is properly configured.",
+    "icon": "Monitor",
+    "features": [
+      "Hardware selection and procurement",
+      "Server and workstation setup",
+      "Network equipment configuration",
+      "Hardware maintenance and support",
+      "Asset management and tracking",
+      "Upgrade and replacement planning"
+    ]
+  }
+]

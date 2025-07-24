@@ -1,0 +1,26 @@
+[
+  {
+    "Id": 1,
+    "name": "John Smith",
+    "email": "john.smith@example.com",
+    "phone": "+1-555-0123",
+    "message": "I'm interested in your ERP consulting services for our manufacturing company. We have about 200 employees and need to modernize our systems.",
+    "timestamp": "2024-01-15T14:30:00Z"
+  },
+  {
+    "Id": 2,
+    "name": "Emily Johnson",
+    "email": "emily.j@techcorp.com",
+    "phone": "+1-555-0456",
+    "message": "We need cybersecurity assessment for our financial services company. Can you provide information about your security audit services?",
+    "timestamp": "2024-01-14T10:15:00Z"
+  },
+  {
+    "Id": 3,
+    "name": "Michael Davis",
+    "email": "m.davis@retailplus.com",
+    "phone": "+1-555-0789",
+    "message": "Looking for custom software development for our e-commerce platform. Need integration with multiple payment gateways and inventory systems.",
+    "timestamp": "2024-01-13T16:45:00Z"
+  }
+]
