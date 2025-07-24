@@ -1,29 +1,21 @@
-import { Link } from "react-router-dom"
-import ApperIcon from "@/components/ApperIcon"
-
+import { Link } from "react-router-dom";
+import React from "react";
+import ApperIcon from "@/components/ApperIcon";
 const Footer = () => {
   return (
-    <footer className="bg-gray-900 text-white">
+<footer className="bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
-          <div className="space-y-4">
-            <div className="flex items-center space-x-3">
-              <img 
-                src="https://content.jdmagicbox.com/v2/comp/delhi/k4/011pxx11.xx11.160322121532.x7k4/catalogue/techlopers-solutions-pvt-ltd-laxmi-nagar-delhi-logo-designers-ucan4jlj72.jpg"
-                alt="Techlopers Solutions"
-                className="h-10 w-auto filter brightness-0 invert"
-              />
-              <div>
-                <h3 className="text-lg font-bold font-display">Techlopers</h3>
-                <p className="text-xs text-gray-400">Solutions Pvt. Ltd.</p>
-              </div>
+          <div className="flex items-center space-x-3">
+            <div className="h-10 w-10 flex items-center justify-center">
+              <ApperIcon className="h-8 w-8 text-white" />
             </div>
-            <p className="text-gray-400 text-sm leading-relaxed">
-              Reliable IT Solutions for Modern Businesses. Providing end-to-end technology services since 2014.
-            </p>
+            <div>
+              <h3 className="text-lg font-bold font-display">Techlopers</h3>
+              <p className="text-xs text-gray-400">Solutions Pvt. Ltd.</p>
+            </div>
             <div className="flex space-x-4">
-              <a 
+<a 
                 href="https://linkedin.com/company/techlopers" 
                 target="_blank" 
                 rel="noopener noreferrer"
